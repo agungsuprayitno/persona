@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		760417731E977C39002EC664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417721E977C39002EC664 /* AppDelegate.swift */; };
-		760417751E977C39002EC664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417741E977C39002EC664 /* ViewController.swift */; };
+		760417751E977C39002EC664 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417741E977C39002EC664 /* HomeController.swift */; };
 		760417781E977C39002EC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760417761E977C39002EC664 /* Main.storyboard */; };
 		7604177A1E977C39002EC664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760417791E977C39002EC664 /* Assets.xcassets */; };
 		7604177D1E977C39002EC664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7604177B1E977C39002EC664 /* LaunchScreen.storyboard */; };
+		760417851E977D24002EC664 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 760417841E977D24002EC664 /* GoogleService-Info.plist */; };
+		7629CE1A1EA3B9C4002388A3 /* LoginFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */; };
+		76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */; };
+		88927F45BBCD72915465A92F /* Pods_Persona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Persona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FC3F7D3ABBCE3FC1E1D6CD /* Pods-Persona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.release.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.release.xcconfig"; sourceTree = "<group>"; };
 		7604176F1E977C39002EC664 /* Persona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		760417721E977C39002EC664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		760417741E977C39002EC664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		760417741E977C39002EC664 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		760417771E977C39002EC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		760417791E977C39002EC664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7604177C1E977C39002EC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7604177E1E977C39002EC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760417841E977D24002EC664 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFirebase.swift; sourceTree = "<group>"; };
+		76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGround.swift; sourceTree = "<group>"; };
+		F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88927F45BBCD72915465A92F /* Pods_Persona.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000ED748A12DD211ABD7AC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		760417661E977C39002EC664 = {
 			isa = PBXGroup;
 			children = (
 				760417711E977C39002EC664 /* Persona */,
 				760417701E977C39002EC664 /* Products */,
+				F68CB44CF9168765E5FBAB98 /* Pods */,
+				000ED748A12DD211ABD7AC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,50 @@
 		760417711E977C39002EC664 /* Persona */ = {
 			isa = PBXGroup;
 			children = (
+				7629CE161EA3B72F002388A3 /* Container */,
+				760417841E977D24002EC664 /* GoogleService-Info.plist */,
 				760417721E977C39002EC664 /* AppDelegate.swift */,
-				760417741E977C39002EC664 /* ViewController.swift */,
+				760417741E977C39002EC664 /* HomeController.swift */,
 				760417761E977C39002EC664 /* Main.storyboard */,
 				760417791E977C39002EC664 /* Assets.xcassets */,
 				7604177B1E977C39002EC664 /* LaunchScreen.storyboard */,
 				7604177E1E977C39002EC664 /* Info.plist */,
+				76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */,
 			);
 			path = Persona;
+			sourceTree = "<group>";
+		};
+		7629CE161EA3B72F002388A3 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				7629CE171EA3B761002388A3 /* Login */,
+			);
+			name = Container;
+			sourceTree = "<group>";
+		};
+		7629CE171EA3B761002388A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7629CE181EA3B999002388A3 /* View */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7629CE181EA3B999002388A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F68CB44CF9168765E5FBAB98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */,
+				61FC3F7D3ABBCE3FC1E1D6CD /* Pods-Persona.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 760417811E977C39002EC664 /* Build configuration list for PBXNativeTarget "Persona" */;
 			buildPhases = (
+				66A6EE35848FB96827740945 /* [CP] Check Pods Manifest.lock */,
 				7604176B1E977C39002EC664 /* Sources */,
 				7604176C1E977C39002EC664 /* Frameworks */,
 				7604176D1E977C39002EC664 /* Resources */,
+				E5C830A6CE8FBAF024136A85 /* [CP] Embed Pods Frameworks */,
+				AE7B393A6E41B5A1C816D241 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7604177D1E977C39002EC664 /* LaunchScreen.storyboard in Resources */,
+				760417851E977D24002EC664 /* GoogleService-Info.plist in Resources */,
 				7604177A1E977C39002EC664 /* Assets.xcassets in Resources */,
 				760417781E977C39002EC664 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +192,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66A6EE35848FB96827740945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7B393A6E41B5A1C816D241 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Persona/Pods-Persona-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C830A6CE8FBAF024136A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Persona/Pods-Persona-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7604176B1E977C39002EC664 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				760417751E977C39002EC664 /* ViewController.swift in Sources */,
+				7629CE1A1EA3B9C4002388A3 /* LoginFirebase.swift in Sources */,
+				76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */,
+				760417751E977C39002EC664 /* HomeController.swift in Sources */,
 				760417731E977C39002EC664 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +369,7 @@
 		};
 		760417821E977C39002EC664 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Persona/Info.plist;
@@ -270,6 +382,7 @@
 		};
 		760417831E977C39002EC664 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FC3F7D3ABBCE3FC1E1D6CD /* Pods-Persona.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Persona/Info.plist;
@@ -299,6 +412,7 @@
 				760417831E977C39002EC664 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
