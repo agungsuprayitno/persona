@@ -14,7 +14,6 @@ class LoginFirebase: UIViewController {
     let inputsContainerView : UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.blue
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 5
         view.layer.masksToBounds = true
         return view

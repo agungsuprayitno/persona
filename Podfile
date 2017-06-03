@@ -6,8 +6,10 @@ target 'Persona' do
   use_frameworks!
 
   # Pods for Persona
-  pod 'Alamofire', '~> 4.4'
   pod 'Firebase/Core'
   pod 'SnapKit', '~> 3.0'
+  pod 'LBTAComponents', '~> 0.1.9' 
+  pod 'TRON', '~> 2.0.0'
+  pod 'TRON/RxSwift', '~> 2.0.0'
 
 end

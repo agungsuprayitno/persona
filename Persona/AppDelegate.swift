@@ -15,12 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: PlayGround())
-        
+        window?.rootViewController = UINavigationController(rootViewController: HomeController())
         
         return true
+    }
+    
+    func rotated() {
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+            print("Landscape")
+        }
+        
+        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+            print("Portrait")
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

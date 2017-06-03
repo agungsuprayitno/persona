@@ -14,12 +14,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LBTAComponents.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Persona.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TRON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B45A6146A472A0615A6BBE160A9AD55</key>
+		<key>1A196107BC8DB338FC11C9CE9510573C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A8406C2D6BBEA2B012D05D3508C7F1BE</key>
+		<key>ADA2175E346918A2EF42DF43D99A113D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B48732CFFE8832F16EFDAE7F264FC995</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C516F3253E00CB129A1D07FADB076792</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3C12956D4FC2CE8305199B7BCE006A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFF2609C1802632DE98DD127B4962F46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
