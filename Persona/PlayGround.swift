@@ -130,7 +130,7 @@ class PlayGround: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
         
-        let loginPage = LoginFirebase()
+        let loginPage = HomeController()
         let navController = UINavigationController(rootViewController: loginPage)
         present(navController, animated: true, completion: nil)
         

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		760417731E977C39002EC664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417721E977C39002EC664 /* AppDelegate.swift */; };
-		760417751E977C39002EC664 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417741E977C39002EC664 /* HomeController.swift */; };
+		760417751E977C39002EC664 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760417741E977C39002EC664 /* LoginController.swift */; };
 		760417781E977C39002EC664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760417761E977C39002EC664 /* Main.storyboard */; };
 		7604177A1E977C39002EC664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760417791E977C39002EC664 /* Assets.xcassets */; };
 		7604177D1E977C39002EC664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7604177B1E977C39002EC664 /* LaunchScreen.storyboard */; };
 		760417851E977D24002EC664 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 760417841E977D24002EC664 /* GoogleService-Info.plist */; };
-		7629CE1A1EA3B9C4002388A3 /* LoginFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */; };
+		7629CE1A1EA3B9C4002388A3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7629CE191EA3B9C4002388A3 /* HomeController.swift */; };
+		76544E5F1EEECE90001692A9 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */; };
+		76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E611EEECFB9001692A9 /* FriendsEntity.swift */; };
+		76544E651EEED0D4001692A9 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E641EEED0D4001692A9 /* FriendView.swift */; };
+		76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4CEA91EE51597004F5856 /* FriendsController.swift */; };
 		76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */; };
 		88927F45BBCD72915465A92F /* Pods_Persona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */; };
 /* End PBXBuildFile section */
@@ -23,13 +27,17 @@
 		61FC3F7D3ABBCE3FC1E1D6CD /* Pods-Persona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.release.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.release.xcconfig"; sourceTree = "<group>"; };
 		7604176F1E977C39002EC664 /* Persona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		760417721E977C39002EC664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		760417741E977C39002EC664 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		760417741E977C39002EC664 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		760417771E977C39002EC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		760417791E977C39002EC664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7604177C1E977C39002EC664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7604177E1E977C39002EC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760417841E977D24002EC664 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFirebase.swift; sourceTree = "<group>"; };
+		7629CE191EA3B9C4002388A3 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
+		76544E611EEECFB9001692A9 /* FriendsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsEntity.swift; sourceTree = "<group>"; };
+		76544E641EEED0D4001692A9 /* FriendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		76F4CEA91EE51597004F5856 /* FriendsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
 		76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGround.swift; sourceTree = "<group>"; };
 		F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +86,6 @@
 				7629CE161EA3B72F002388A3 /* Container */,
 				760417841E977D24002EC664 /* GoogleService-Info.plist */,
 				760417721E977C39002EC664 /* AppDelegate.swift */,
-				760417741E977C39002EC664 /* HomeController.swift */,
 				760417761E977C39002EC664 /* Main.storyboard */,
 				760417791E977C39002EC664 /* Assets.xcassets */,
 				7604177B1E977C39002EC664 /* LaunchScreen.storyboard */,
@@ -91,6 +98,7 @@
 		7629CE161EA3B72F002388A3 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				765871461EE51555003818A5 /* Friends */,
 				7629CE171EA3B761002388A3 /* Login */,
 			);
 			name = Container;
@@ -107,9 +115,53 @@
 		7629CE181EA3B999002388A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7629CE191EA3B9C4002388A3 /* LoginFirebase.swift */,
+				760417741E977C39002EC664 /* LoginController.swift */,
+				7629CE191EA3B9C4002388A3 /* HomeController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		76544E5D1EEECE7D001692A9 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */,
+			);
+			name = interactor;
+			sourceTree = "<group>";
+		};
+		76544E601EEECF9B001692A9 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				76544E611EEECFB9001692A9 /* FriendsEntity.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		76544E631EEED0BE001692A9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				76544E641EEED0D4001692A9 /* FriendView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		765871461EE51555003818A5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				76544E631EEED0BE001692A9 /* view */,
+				76544E601EEECF9B001692A9 /* entity */,
+				76544E5D1EEECE7D001692A9 /* interactor */,
+				76F4CEA81EE5156F004F5856 /* presenter */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		76F4CEA81EE5156F004F5856 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				76F4CEA91EE51597004F5856 /* FriendsController.swift */,
+			);
+			name = presenter;
 			sourceTree = "<group>";
 		};
 		F68CB44CF9168765E5FBAB98 /* Pods */ = {
@@ -245,10 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7629CE1A1EA3B9C4002388A3 /* LoginFirebase.swift in Sources */,
+				7629CE1A1EA3B9C4002388A3 /* HomeController.swift in Sources */,
+				76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */,
+				76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */,
 				76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */,
-				760417751E977C39002EC664 /* HomeController.swift in Sources */,
+				760417751E977C39002EC664 /* LoginController.swift in Sources */,
 				760417731E977C39002EC664 /* AppDelegate.swift in Sources */,
+				76544E651EEED0D4001692A9 /* FriendView.swift in Sources */,
+				76544E5F1EEECE90001692A9 /* FriendsControllerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
