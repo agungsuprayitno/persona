@@ -11,25 +11,6 @@ import LBTAComponents
 
 class MessageCell: BaseCell {
     
-    var message = Message() {
-        didSet{
-            nameLabel.text = message.friend?.name
-            
-            if let profileImageName = message.friend?.profileImageName {
-                profileImageView.image = UIImage(named: profileImageName)
-            }
-            
-            messageLabel.text = message.text
-            
-            if let date = message.date {
-                let dateFormater = DateFormatter()
-                dateFormater.dateFormat = "h:mm a"
-                
-                timeLabel.text = dateFormater.string(from: date as Date)
-            }
-        }
-    }
-    
     let profileImageView : UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill

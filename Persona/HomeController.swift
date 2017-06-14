@@ -36,10 +36,10 @@ class HomeController: UIViewController {
     func backtoLogin() {
         
         self.dismiss(animated: true, completion: nil)
-        
-        let homePage = PlayGround()
-        let navController = UINavigationController(rootViewController: homePage)
-        present(navController, animated: true, completion: nil)
+//        
+//        let homePage = PlayGround()
+//        let navController = UINavigationController(rootViewController: homePage)
+//        present(navController, animated: true, completion: nil)
     }
     
 }

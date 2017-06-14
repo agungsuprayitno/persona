@@ -19,11 +19,11 @@
 		764543CF1EF070D5001E111A /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */; };
 		764543D01EF070D5001E111A /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */; };
 		764543D11EF070D5001E111A /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */; };
-		76544E5F1EEECE90001692A9 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */; };
+		764543D31EF0EAA1001E111A /* FriendsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543D21EF0EAA1001E111A /* FriendsManager.swift */; };
+		76544E5F1EEECE90001692A9 /* FriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E5E1EEECE90001692A9 /* FriendsInteractor.swift */; };
 		76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E611EEECFB9001692A9 /* FriendsEntity.swift */; };
 		76544E651EEED0D4001692A9 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E641EEED0D4001692A9 /* FriendView.swift */; };
 		76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4CEA91EE51597004F5856 /* FriendsController.swift */; };
-		76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */; };
 		88927F45BBCD72915465A92F /* Pods_Persona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,11 +44,11 @@
 		764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
 		764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
+		764543D21EF0EAA1001E111A /* FriendsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsManager.swift; sourceTree = "<group>"; };
+		76544E5E1EEECE90001692A9 /* FriendsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInteractor.swift; sourceTree = "<group>"; };
 		76544E611EEECFB9001692A9 /* FriendsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsEntity.swift; sourceTree = "<group>"; };
 		76544E641EEED0D4001692A9 /* FriendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
 		76F4CEA91EE51597004F5856 /* FriendsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
-		76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayGround.swift; sourceTree = "<group>"; };
 		F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +93,6 @@
 		760417711E977C39002EC664 /* Persona */ = {
 			isa = PBXGroup;
 			children = (
-				764543CA1EF070D5001E111A /* Friend+CoreDataClass.swift */,
-				764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */,
-				764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */,
-				764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */,
 				7629CE161EA3B72F002388A3 /* Container */,
 				760417841E977D24002EC664 /* GoogleService-Info.plist */,
 				760417721E977C39002EC664 /* AppDelegate.swift */,
@@ -104,7 +100,6 @@
 				760417791E977C39002EC664 /* Assets.xcassets */,
 				7604177B1E977C39002EC664 /* LaunchScreen.storyboard */,
 				7604177E1E977C39002EC664 /* Info.plist */,
-				76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */,
 				764543C71EF07027001E111A /* persona.xcdatamodeld */,
 			);
 			path = Persona;
@@ -139,7 +134,8 @@
 		76544E5D1EEECE7D001692A9 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */,
+				76544E5E1EEECE90001692A9 /* FriendsInteractor.swift */,
+				764543D21EF0EAA1001E111A /* FriendsManager.swift */,
 			);
 			name = interactor;
 			sourceTree = "<group>";
@@ -147,6 +143,10 @@
 		76544E601EEECF9B001692A9 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				764543CA1EF070D5001E111A /* Friend+CoreDataClass.swift */,
+				764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */,
+				764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */,
+				764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */,
 				76544E611EEECFB9001692A9 /* FriendsEntity.swift */,
 			);
 			name = entity;
@@ -317,14 +317,14 @@
 				764543CF1EF070D5001E111A /* Friend+CoreDataProperties.swift in Sources */,
 				764543D01EF070D5001E111A /* Message+CoreDataClass.swift in Sources */,
 				76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */,
+				764543D31EF0EAA1001E111A /* FriendsManager.swift in Sources */,
 				76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */,
 				764543D11EF070D5001E111A /* Message+CoreDataProperties.swift in Sources */,
 				764543C91EF07027001E111A /* persona.xcdatamodeld in Sources */,
-				76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */,
 				760417751E977C39002EC664 /* LoginController.swift in Sources */,
 				760417731E977C39002EC664 /* AppDelegate.swift in Sources */,
 				76544E651EEED0D4001692A9 /* FriendView.swift in Sources */,
-				76544E5F1EEECE90001692A9 /* FriendsControllerHelper.swift in Sources */,
+				76544E5F1EEECE90001692A9 /* FriendsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

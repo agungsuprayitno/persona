@@ -18,15 +18,16 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupData()
         
         navigationItem.title = "Recent"
         
         collectionView?.backgroundColor = UIColor.white
         collectionView?.alwaysBounceVertical = true
         
-        collectionView?.register(MessageCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(MessageCellManager.self, forCellWithReuseIdentifier: cellId)
         
-        setupData()
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,7 +39,7 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MessageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MessageCellManager
         
         if let message = messages?[indexPath.item] {
             cell.message = message
