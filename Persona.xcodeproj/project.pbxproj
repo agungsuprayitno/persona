@@ -14,6 +14,11 @@
 		7604177D1E977C39002EC664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7604177B1E977C39002EC664 /* LaunchScreen.storyboard */; };
 		760417851E977D24002EC664 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 760417841E977D24002EC664 /* GoogleService-Info.plist */; };
 		7629CE1A1EA3B9C4002388A3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7629CE191EA3B9C4002388A3 /* HomeController.swift */; };
+		764543C91EF07027001E111A /* persona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 764543C71EF07027001E111A /* persona.xcdatamodeld */; };
+		764543CE1EF070D5001E111A /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CA1EF070D5001E111A /* Friend+CoreDataClass.swift */; };
+		764543CF1EF070D5001E111A /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */; };
+		764543D01EF070D5001E111A /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */; };
+		764543D11EF070D5001E111A /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */; };
 		76544E5F1EEECE90001692A9 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */; };
 		76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E611EEECFB9001692A9 /* FriendsEntity.swift */; };
 		76544E651EEED0D4001692A9 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E641EEED0D4001692A9 /* FriendView.swift */; };
@@ -34,6 +39,11 @@
 		7604177E1E977C39002EC664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760417841E977D24002EC664 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7629CE191EA3B9C4002388A3 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		764543C81EF07027001E111A /* persona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = persona.xcdatamodel; sourceTree = "<group>"; };
+		764543CA1EF070D5001E111A /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
+		764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		76544E5E1EEECE90001692A9 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
 		76544E611EEECFB9001692A9 /* FriendsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsEntity.swift; sourceTree = "<group>"; };
 		76544E641EEED0D4001692A9 /* FriendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
@@ -83,6 +93,10 @@
 		760417711E977C39002EC664 /* Persona */ = {
 			isa = PBXGroup;
 			children = (
+				764543CA1EF070D5001E111A /* Friend+CoreDataClass.swift */,
+				764543CB1EF070D5001E111A /* Friend+CoreDataProperties.swift */,
+				764543CC1EF070D5001E111A /* Message+CoreDataClass.swift */,
+				764543CD1EF070D5001E111A /* Message+CoreDataProperties.swift */,
 				7629CE161EA3B72F002388A3 /* Container */,
 				760417841E977D24002EC664 /* GoogleService-Info.plist */,
 				760417721E977C39002EC664 /* AppDelegate.swift */,
@@ -91,6 +105,7 @@
 				7604177B1E977C39002EC664 /* LaunchScreen.storyboard */,
 				7604177E1E977C39002EC664 /* Info.plist */,
 				76FE8D171E9E1BE5004F3BD7 /* PlayGround.swift */,
+				764543C71EF07027001E111A /* persona.xcdatamodeld */,
 			);
 			path = Persona;
 			sourceTree = "<group>";
@@ -298,8 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7629CE1A1EA3B9C4002388A3 /* HomeController.swift in Sources */,
+				764543CE1EF070D5001E111A /* Friend+CoreDataClass.swift in Sources */,
+				764543CF1EF070D5001E111A /* Friend+CoreDataProperties.swift in Sources */,
+				764543D01EF070D5001E111A /* Message+CoreDataClass.swift in Sources */,
 				76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */,
 				76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */,
+				764543D11EF070D5001E111A /* Message+CoreDataProperties.swift in Sources */,
+				764543C91EF07027001E111A /* persona.xcdatamodeld in Sources */,
 				76FE8D181E9E1BE5004F3BD7 /* PlayGround.swift in Sources */,
 				760417751E977C39002EC664 /* LoginController.swift in Sources */,
 				760417731E977C39002EC664 /* AppDelegate.swift in Sources */,
@@ -471,6 +491,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		764543C71EF07027001E111A /* persona.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				764543C81EF07027001E111A /* persona.xcdatamodel */,
+			);
+			currentVersion = 764543C81EF07027001E111A /* persona.xcdatamodel */;
+			path = persona.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 760417671E977C39002EC664 /* Project object */;
 }
