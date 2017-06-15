@@ -26,13 +26,11 @@ class MessageCell: BaseCell {
     
     let nameLabel : UILabel = {
         let label = UILabel()
-//        label.text = "Friend Name"
         return label
     }()
     
     let messageLabel : UILabel = {
         let label = UILabel()
-//        label.text = "Here is some message for you lets write some text for you son , then request it"
         label.textColor = UIColor.darkGray
         label.font = UIFont.systemFont(ofSize: 14)
         return label
@@ -40,7 +38,6 @@ class MessageCell: BaseCell {
     
     let timeLabel : UILabel = {
         let label = UILabel()
-//        label.text = "12:05 pm"
         label.font = UIFont.systemFont(ofSize: 14)
         return label
     }()
@@ -54,7 +51,6 @@ class MessageCell: BaseCell {
     
     private func setupContainerView(){
         let containerView = UIView()
-        //containerView.backgroundColor = UIColor.red
         
         addSubview(containerView)
         addSubview(nameLabel)
@@ -81,23 +77,6 @@ class MessageCell: BaseCell {
         
         setupContainerView()
         
-    }
-    
-}
-
-class BaseCell : UICollectionViewCell {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setupViews() {
-        backgroundColor = UIColor.black
     }
     
 }
