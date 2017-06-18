@@ -24,9 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //  default route for login
 //        window?.rootViewController = UINavigationController(rootViewController: LoginController())
         
-        let layout = UICollectionViewFlowLayout()
-        let friendsController = FriendsController(collectionViewLayout: layout)
-        window?.rootViewController = UINavigationController(rootViewController: friendsController)
+        //  for showing recent messages from firends
+//        let layout = UICollectionViewFlowLayout()
+//        let friendsController = FriendsController(collectionViewLayout: layout)
+//        window?.rootViewController = UINavigationController(rootViewController: friendsController)
+        
+        // load UITabBarController on footer
+        
+        window?.rootViewController = customTabbarController()
         
         return true
     }

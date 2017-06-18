@@ -25,6 +25,15 @@ class MessageCellManager: MessageCell {
                 let dateFormater = DateFormatter()
                 dateFormater.dateFormat = "h:mm a"
                 
+                let elapsedTimeInSeconds = NSDate().timeIntervalSince(date as Date)
+                let secondInDays: TimeInterval = 60 * 60 * 24
+                
+                if elapsedTimeInSeconds > 7 * secondInDays {
+                    dateFormater.dateFormat = "MM/dd/yy"
+                }else if elapsedTimeInSeconds > secondInDays {
+                    dateFormater.dateFormat = "EEE"
+                }
+                
                 timeLabel.text = dateFormater.string(from: date as Date)
             }
         }

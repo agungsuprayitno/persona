@@ -2,9 +2,8 @@
 //  Message+CoreDataProperties.swift
 //  Persona
 //
-//  Created by Agung Suprayitno on 6/14/17.
+//  Created by Agung Suprayitno on 6/18/17.
 //  Copyright © 2017 Agung Suprayitno. All rights reserved.
-//  This file was automatically generated and should not be edited.
 //
 
 import Foundation
@@ -17,8 +16,9 @@ extension Message {
         return NSFetchRequest<Message>(entityName: "Message");
     }
 
-    @NSManaged public var text: String?
     @NSManaged public var date: NSDate?
+    @NSManaged public var text: String?
+    @NSManaged public var isSender: Bool
     @NSManaged public var friend: Friend?
 
 }

@@ -24,6 +24,7 @@
 		76544E5F1EEECE90001692A9 /* FriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E5E1EEECE90001692A9 /* FriendsInteractor.swift */; };
 		76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E611EEECFB9001692A9 /* FriendsEntity.swift */; };
 		76544E651EEED0D4001692A9 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E641EEED0D4001692A9 /* FriendView.swift */; };
+		76D2933F1EF3DA57007310B7 /* tabBarFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2933E1EF3DA57007310B7 /* tabBarFooter.swift */; };
 		76D86BF81EF2B51000195D41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D86BF71EF2B51000195D41 /* ViewController.swift */; };
 		76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4CEA91EE51597004F5856 /* FriendsController.swift */; };
 		88927F45BBCD72915465A92F /* Pods_Persona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34324E492B9DA66D5B8DAC11 /* Pods_Persona.framework */; };
@@ -51,6 +52,7 @@
 		76544E5E1EEECE90001692A9 /* FriendsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInteractor.swift; sourceTree = "<group>"; };
 		76544E611EEECFB9001692A9 /* FriendsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsEntity.swift; sourceTree = "<group>"; };
 		76544E641EEED0D4001692A9 /* FriendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		76D2933E1EF3DA57007310B7 /* tabBarFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabBarFooter.swift; sourceTree = "<group>"; };
 		76D86BF71EF2B51000195D41 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76F4CEA91EE51597004F5856 /* FriendsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
 		F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persona.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Persona/Pods-Persona.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		7629CE161EA3B72F002388A3 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				76D2933C1EF3DA2C007310B7 /* TabBar */,
 				764543D41EF16467001E111A /* ChatLog */,
 				765871461EE51555003818A5 /* Friends */,
 				7629CE171EA3B761002388A3 /* Login */,
@@ -193,6 +196,22 @@
 			name = Friends;
 			sourceTree = "<group>";
 		};
+		76D2933C1EF3DA2C007310B7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				76D2933D1EF3DA38007310B7 /* presenter */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		76D2933D1EF3DA38007310B7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				76D2933E1EF3DA57007310B7 /* tabBarFooter.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
 		76F4CEA81EE5156F004F5856 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +264,7 @@
 				TargetAttributes = {
 					7604176E1E977C39002EC664 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D4LGE36677;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -342,6 +362,7 @@
 				76544E621EEECFB9001692A9 /* FriendsEntity.swift in Sources */,
 				764543D31EF0EAA1001E111A /* FriendsManager.swift in Sources */,
 				76F4CEAA1EE51597004F5856 /* FriendsController.swift in Sources */,
+				76D2933F1EF3DA57007310B7 /* tabBarFooter.swift in Sources */,
 				764543D11EF070D5001E111A /* Message+CoreDataProperties.swift in Sources */,
 				764543C91EF07027001E111A /* persona.xcdatamodeld in Sources */,
 				760417751E977C39002EC664 /* LoginController.swift in Sources */,
@@ -417,6 +438,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -472,6 +494,9 @@
 			baseConfigurationReference = F0182132AE205F96B86CDAE3 /* Pods-Persona.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D4LGE36677;
 				INFOPLIST_FILE = Persona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agung.Persona;
@@ -485,6 +510,8 @@
 			baseConfigurationReference = 61FC3F7D3ABBCE3FC1E1D6CD /* Pods-Persona.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D4LGE36677;
 				INFOPLIST_FILE = Persona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agung.Persona;

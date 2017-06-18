@@ -11,6 +11,17 @@ import LBTAComponents
 
 class MessageCell: BaseCell {
     
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = self.isHighlighted ? UIColor.init(r: 0, g: 124, b: 247) : UIColor.white
+            
+            nameLabel.textColor = self.isHighlighted ? UIColor.white : UIColor.black
+            timeLabel.textColor = self.isHighlighted ? UIColor.white : UIColor.black
+            messageLabel.textColor = self.isHighlighted ? UIColor.white : UIColor.black
+        }
+        
+    }
+    
     let profileImageView : UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
