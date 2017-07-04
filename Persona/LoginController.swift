@@ -74,7 +74,10 @@ class LoginController: UIViewController{
             print("JSON Error", json)
         }
     }
-    let tron = TRON(baseURL: "http://localhost")
+    
+    static let urlRequest = "https://api.huniloka.com"
+   // static let urlRequest = "http://localhost" // purpose for testing development
+    let tron = TRON(baseURL: urlRequest)
     
     func handleLogin() {
         
@@ -90,6 +93,9 @@ class LoginController: UIViewController{
         ]
         request.perform(withSuccess: { (home) in
             print("success", home)
+            
+            let homeController = customTabbarController()
+            self.present(homeController, animated: true, completion: nil)
             
         }) { (err) in
             

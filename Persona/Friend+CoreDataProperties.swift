@@ -2,9 +2,8 @@
 //  Friend+CoreDataProperties.swift
 //  Persona
 //
-//  Created by Agung Suprayitno on 6/14/17.
+//  Created by Agung Suprayitno on 6/23/17.
 //  Copyright © 2017 Agung Suprayitno. All rights reserved.
-//  This file was automatically generated and should not be edited.
 //
 
 import Foundation
@@ -20,6 +19,7 @@ extension Friend {
     @NSManaged public var name: String?
     @NSManaged public var profileImageName: String?
     @NSManaged public var messages: NSSet?
+    @NSManaged public var lastMessage: Message?
 
 }
 

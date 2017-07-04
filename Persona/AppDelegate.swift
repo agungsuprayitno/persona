@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         //  default route for login
-//        window?.rootViewController = UINavigationController(rootViewController: LoginController())
+        window?.rootViewController = UINavigationController(rootViewController: LoginController())
         
         //  for showing recent messages from firends
 //        let layout = UICollectionViewFlowLayout()
@@ -31,18 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // load UITabBarController on footer
         
-        window?.rootViewController = customTabbarController()
+//        window?.rootViewController = customTabbarController()
         
         return true
     }
     
     func rotated() {
         if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
-            print("Landscape")
+           // print("Landscape")
         }
         
         if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
-            print("Portrait")
+           // print("Portrait")
         }
         
     }
