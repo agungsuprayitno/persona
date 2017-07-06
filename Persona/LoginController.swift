@@ -75,7 +75,7 @@ class LoginController: UIViewController{
         }
     }
     
-    static let urlRequest = "https://api.huniloka.com"
+    static let urlRequest = "http://api.huniloka.com"
    // static let urlRequest = "http://localhost" // purpose for testing development
     let tron = TRON(baseURL: urlRequest)
     
